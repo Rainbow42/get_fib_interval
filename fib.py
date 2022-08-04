@@ -24,7 +24,6 @@ def get_fib_interval(n: int) -> List[int, int]:
 
     for _ in range(n):
         res = el_fib_1 + el_fib_2
-
         if res > tmp:
             # первый же промежуточный результат будет концом интервала
             if last_res == tmp:
@@ -32,6 +31,7 @@ def get_fib_interval(n: int) -> List[int, int]:
                 # в начало интервала не должно попасть само число
                 return [before_last, res]
             return [last_res, res]
+
         before_last, last_res = last_res, res
         el_fib_1, el_fib_2 = el_fib_2, res
 
