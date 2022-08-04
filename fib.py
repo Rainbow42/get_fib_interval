@@ -28,6 +28,8 @@ def get_fib_interval(n: int) -> List[int, int]:
         if res > tmp:
             # первый же промежуточный результат будет концом интервала
             if last_res == tmp:
+                # по условию задачи нужно найти промежуток между числом,
+                # в начало интервала не должно попасть само число
                 return [before_last, res]
             return [last_res, res]
         before_last, last_res = last_res, res
