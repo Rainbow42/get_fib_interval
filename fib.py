@@ -1,7 +1,7 @@
 from typing import List
 
 
-def get_fib_interval(n: int) -> List[int]:
+def get_fib_interval(n: int) -> List[int, int]:
     """
     :param n: Входное число, для которого требуется подсчитать последовательность фибоначчи и найти интервал
     :return: возвращает интервал
