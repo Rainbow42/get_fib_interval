@@ -34,6 +34,7 @@ def get_fib_interval(n: int) -> List[int, int]:
             return [last_res, res]
         before_last, last_res = last_res, res
         el_fib_1, el_fib_2 = el_fib_2, res
+
     return [last_res, res]
 
 
